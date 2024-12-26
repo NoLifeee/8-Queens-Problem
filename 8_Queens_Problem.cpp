@@ -59,7 +59,7 @@ void solve(int row, vector<int> &queens)
 
 int main()
 {
-    vector<int> queens(N, 0); // positions with the value 0 are marked as empty
+    vector<int> queens(N, -1); // positions with the value -1 are marked as empty
     solve(0, queens);
     cout << "There are " << nrSol << " solutions";
     return 0;
