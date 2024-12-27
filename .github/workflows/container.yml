@@ -23,7 +23,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build and tag the Docker image
-      run: docker build . --file Dockerfile --tag nolife1/8queens:1.0
+      run: docker build . --file Dockerfile --tag nolife1/8queens:latest
 
     - name: Push Docker image
-      run: docker push nolife1/8queens:1.0
+      run: docker push nolife1/8queens:latest
