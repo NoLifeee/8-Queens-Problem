@@ -13,6 +13,17 @@ jobs:
     runs-on: windows-latest
 
     steps:
+
     - uses: actions/checkout@v4
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Build and tag the Docker image
+      run: docker build . --file Dockerfile --tag nolife1/8queens:1.0
+
+    - name: Push Docker image
+      run: docker push nolife1/8queens:1.0
