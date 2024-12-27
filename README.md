@@ -29,7 +29,6 @@ The problem was initially studied by Carl Friedrich Gauss in 1850 and requires a
 ## Installation and Setup
 
 1. Clone the repository:
-    [this is the repository url for the command below](https://github.com/NoLifeee/8-Queens-Problem)
    ```bash
     git clone <repository url>
    ```
@@ -72,9 +71,11 @@ The implementation uses **backtracking** to attempt placing queens row by row:
 - Visual representation of the diagonals:
     
     - **Positive diagonals:**
+
     ![Image not loaded](images/positive.png)   
 
     - **Negative diagonals:**
+
     ![Image not loaded](images/negative.png)
 
 3. Recursively attempt placement for the next row.
