@@ -66,6 +66,7 @@ The implementation uses **backtracking** to attempt placing queens row by row:
     - **Negative diagonals:** `row - col`
 
 Code for the diagonal checks:
+
 ![Image not loaded](images/diagonalCheck.png)
 
 - Visual representation of the diagonals:
