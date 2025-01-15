@@ -37,7 +37,7 @@ The problem was initially studied by Carl Friedrich Gauss in 1850 and requires a
 3. Ensure that a C++ compiler (such as MinGW) is installed.
 4. Build and run the project:
    ```bash
-   g++ 8queens.cpp -o 8queens
+   g++ 8_Queens_Problem.cpp -o 8queens
    ./8queens
    ```
 
